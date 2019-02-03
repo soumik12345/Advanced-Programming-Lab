@@ -1,4 +1,4 @@
-Q1. WAP to check if a number is positive or not
+Q 1. WAP to check if a number is positive or not
 
 ```
 n = 10
@@ -11,7 +11,7 @@ Output:
 "Positive"
 ```
 
-Q2. WAP to check if a number is positive or negative.
+Q 2. WAP to check if a number is positive or negative.
 ```
 n = 10
 if(n > 0){
@@ -23,6 +23,122 @@ if(n > 0){
 Output:
 ```
 "Positive"
+```
+
+Q 3. WAP to check if a year is leap year or not.
+```
+x = 2012
+if(((x %% 400) == 0) || (((x %% 4) == 0) && ((x %% 100) != 0))) {
+    print("Leap Year")
+} else {
+    print("Not a leap year")
+}
+```
+Output:
+```
+"Leap Year"
+```
+
+Q 4. WAP to check biggest of 2 numbers.
+```
+x = 50
+y = 40
+if (x > y) {
+    print(x)
+} else {
+    print(y)
+}
+```
+Output:
+```
+50
+```
+
+Q 5. WAP to check if a given number is pallindrome or not.
+```
+n = 121
+p = n
+r = 0
+while (n != 0) {
+    a = n %% 10
+    r = r * 10 + a
+    n = floor(n / 10)
+}
+if (r == p) {
+    print("Palindrome")
+} else {
+    print("Not Palindrome")
+}
+```
+Output:
+```
+"Palindrome"
+```
+
+Q 6. WAP to find total marks, percentage and grade from marks of 3 subjects.
+```
+m1 = 80
+m2 = 90
+m3 = 95
+total = m1 + m2 + m3
+print(paste("The total marks is",total))
+per = (total / 3) * 100
+if(per >= 90) {
+    print("O Grade")
+} else if (per >= 80) {
+    print("E Grade")
+} else if(per >= 70) {
+    print("A Grade")
+} else if (per >= 60) {
+    print("B Grade")
+} else {
+    print("FAIL")
+}
+```
+Output:
+```
+"The total marks is 265"
+"O Grade"
+```
+
+Q 7. WAP to perform the operations using switch case:
+1) Area of a circle
+2) Area of rectangle
+3) Area of triangle
+```
+inp = "c"
+switch(inp, c = {
+    r = 10
+    cat("Area of circle: ", (pi * r * r))
+}, r = {
+    a = 10
+    b = 20
+    cat("Area of rectangle: ", (a * b))
+}, t = {
+    b = 10
+    h = 20
+    cat("Area of triangle: ", (0.5 * b * h))
+})
+```
+Output:
+```
+Area of circle:  314.1593
+```
+
+Q 8. WAP to display the color according to choice using switch case: R - RED, G - GREEN, B - BLUE
+```
+inp = "R"
+switch(inp, R = {
+    print("RED")
+}, G = {
+    print("GREEN")
+}, B = {
+    print("BLUE")
+})
+```
+Output:
+```
+"RED"
 ```
 
 Q 3.1. WAP to generate the series 1, 4, 9, ...., n^2
