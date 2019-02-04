@@ -82,7 +82,7 @@ cat("Sum: ", add_series(10))
 # Q5
 reverse_util <- function(n, r) {
     if (n != 0) {
-        return (reverse((floor(n / 10)), (r * 10 + n %% 10)))
+        return (reverse_util((floor(n / 10)), (r * 10 + n %% 10)))
     }
     return (r)
 }
@@ -94,19 +94,7 @@ reverse <- function(n) {
 cat("Reverse: ", reverse(122))
 ```
 
-
-    Error in reverse((floor(n/10)), (r * 10 + n%%10)): unused argument ((r * 10 + n%%10))
-    Traceback:
-
-
-    1. cat("Reverse: ", reverse(122))
-
-    2. reverse(122)
-
-    3. reverse_util(n, 0)   # at line 10 of file <text>
-
-    4. reverse((floor(n/10)), (r * 10 + n%%10))   # at line 4 of file <text>
-
+    Reverse:  221
 
 
 ```R
